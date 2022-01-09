@@ -352,7 +352,7 @@ stages:
           timeoutInMinutes: 80 # task times out in 80 minutes
           inputs:
             notifyUsers: |
-              jcdev@outlook.com
+              junior_cj07@hotmail.com
             instructions: 'Please validate the end of the Pipeline to destroy the Infraestructure'
             onTimeout: 'resume'
   
