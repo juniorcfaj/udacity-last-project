@@ -23,7 +23,7 @@ stages:
       steps:
       - task: DownloadSecureFile@1
         name: tfvardef
-        displayName: Download terraform.tfvars
+        displayName: Download new-terraform.tfvars
         inputs:
           secureFile: 'terraform.tfvars'
 
@@ -36,10 +36,10 @@ stages:
           sshKeySecureFile: 'id_rsa'
       
       - task: Bash@3
-        displayName: Copy terraform.tfvars
+        displayName: Copy new-terraform.tfvars
         inputs:
           targetType: 'inline'
-          script: cp $(Agent.TempDirectory)/terraform.tfvars $(System.DefaultWorkingDirectory)/terraform
+          script: cp $(Agent.TempDirectory)/new-terraform.tfvars $(System.DefaultWorkingDirectory)/terraform
       
       - task: TerraformInstaller@0
         displayName: Install Terraform
@@ -366,7 +366,7 @@ stages:
       steps:
       - task: DownloadSecureFile@1
         name: tfvardef
-        displayName: Download terraform.tfvars
+        displayName: Download new-terraform.tfvars
         inputs:
           secureFile: 'terraform.tfvars'
 
@@ -379,10 +379,10 @@ stages:
           sshKeySecureFile: 'id_rsa'
       
       - task: Bash@3
-        displayName: Copy terraform.tfvars
+        displayName: Copy new-terraform.tfvars
         inputs:
           targetType: 'inline'
-          script: cp $(Agent.TempDirectory)/terraform.tfvars $(System.DefaultWorkingDirectory)/terraform
+          script: cp $(Agent.TempDirectory)/new-terraform.tfvars $(System.DefaultWorkingDirectory)/terraform
       
       - task: TerraformInstaller@0
         displayName: Install Terraform
