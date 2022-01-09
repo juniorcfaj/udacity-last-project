@@ -41,7 +41,7 @@ stages:
           targetType: 'inline'
           script: cp $(Agent.TempDirectory)/terraform.tfvars $(System.DefaultWorkingDirectory)/terraform
       
-      - task: TerraformInstalador@0
+      - task: TerraformInstaller@0
         displayName: Install Terraform
         inputs:
           terraformVersion: '0.14.8'
@@ -384,7 +384,7 @@ stages:
           targetType: 'inline'
           script: cp $(Agent.TempDirectory)/terraform.tfvars $(System.DefaultWorkingDirectory)/terraform
       
-      - task: TerraformInstalador@0
+      - task: TerraformInstaller@0
         displayName: Install Terraform
         inputs:
           terraformVersion: '0.14.8'

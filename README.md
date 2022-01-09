@@ -36,7 +36,7 @@ CI / CD Test Automation Pipeline - Azure DevOps - Terraform - JMeter -Selenium -
 1. Clone this repo:
 
 ```sh
-git clone https://github.com/jfcb853/Udacity-DevOps-Azure-Project-3
+git clone https://github.com/juniorcfaj/udacity-last-project
 ```
 
 2. Open a Terminal in VS Code and connect to your Azure Account and get the Subscription ID
@@ -56,7 +56,7 @@ az account list --output table
 
 * Take notes of **storage_account_name**, **container_name**, **access_key** . They are will be used in **main.tf** terrafrom files ( lines 15 to 19)
 
-> storage_account_name: tstate3994
+> storage_account_name: tstate18893
 > container_name: tstate
 > access_key: j/bg+StBWOPqf5fQCPF+tCLFeGURmKEnE675v4aVN1RzyUW3+wlFLrq/dTon4XPrCRKMl5/Z79qNRGR7ZHBPQw==
 
