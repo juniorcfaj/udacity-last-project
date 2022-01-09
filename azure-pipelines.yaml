@@ -36,8 +36,8 @@ stages:
           sshKeySecureFile: 'id_rsa'
       
       - bash: |
-        cp $(Agent.TempDirectory)/tf.tfvars $(System.DefaultWorkingDirectory)/tf
-      displayName: Copy tf.tfvars
+          cp $(Agent.TempDirectory)/tf.tfvars $(System.DefaultWorkingDirectory)/tf
+        displayName: Copy tf.tfvars
       
       - task: TerraformInstaller@0
         displayName: Install Terraform
