@@ -359,7 +359,7 @@ stages:
   - stage: DestroyIaC
     displayName: Destroy IaC
     jobs:
-    - job: Destroy_It
+    - job: Destroy_Azure_IaC
       displayName: Destroy Azure IaC
       pool:
         vmImage: 'ubuntu-18.04'
@@ -384,7 +384,7 @@ stages:
           targetType: 'inline'
           script: cp $(Agent.TempDirectory)/terraform.tfvars $(System.DefaultWorkingDirectory)/terraform
       
-      - task: TerraformInstaller@0
+      - task: TerraformInstalador@0
         displayName: Install Terraform
         inputs:
           terraformVersion: '0.14.8'
