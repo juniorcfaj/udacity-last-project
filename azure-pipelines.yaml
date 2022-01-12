@@ -49,9 +49,9 @@ stages:
         inputs:
           provider: 'azurerm'
           command: 'terraform init'
-          backendServiceArm: 'last-project'
+          backendServiceArm: 'tstate'
           backendAzureRmResourceGroupName: 'tstate'
-          backendAzureRmStorageAccountName: 'tstate18893'
+          backendAzureRmStorageAccountName: 'tstate14754'
           backendAzureRmContainerName: 'tstate'
           backendAzureRmKey: 'terraform.tfstate'
           workingDirectory: '$(System.DefaultWorkingDirectory)/tf'
@@ -62,7 +62,7 @@ stages:
           provider: 'azurerm'
           command: 'validate'
           workingDirectory: '$(System.DefaultWorkingDirectory)/tf'
-          environmentServiceNameAzureRM: 'last-project'
+          environmentServiceNameAzureRM: 'tstate'
       
       - task: TerraformTaskV1@0
         displayName: Terraform Plan
@@ -70,7 +70,7 @@ stages:
           provider: 'azurerm'
           command: 'plan'
           workingDirectory: '$(System.DefaultWorkingDirectory)/tf'
-          environmentServiceNameAzureRM: 'last-project'
+          environmentServiceNameAzureRM: 'tstate'
       
       - task: TerraformTaskV1@0
         displayName: Terraform Apply
@@ -80,7 +80,7 @@ stages:
           commandOptions: |
             -auto-approve
           workingDirectory: '$(System.DefaultWorkingDirectory)/tf'
-          environmentServiceNameAzureRM: 'last-project'
+          environmentServiceNameAzureRM: 'tstate'
 
   - stage: Build
     jobs:
@@ -392,9 +392,9 @@ stages:
         inputs:
           provider: 'azurerm'
           command: 'init'
-          backendServiceArm: 'last-project'
+          backendServiceArm: 'tstate'
           backendAzureRmResourceGroupName: 'tstate'
-          backendAzureRmStorageAccountName: 'tstate18893'
+          backendAzureRmStorageAccountName: 'tstate14754'
           backendAzureRmContainerName: 'tstate'
           backendAzureRmKey: 'terraform.tfstate'
           workingDirectory: '$(System.DefaultWorkingDirectory)/tf'
@@ -407,4 +407,4 @@ stages:
           commandOptions: |
             -auto-approve
           workingDirectory: '$(System.DefaultWorkingDirectory)/tf'
-          environmentServiceNameAzureRM: 'last-project'
+          environmentServiceNameAzureRM: 'tstate'
