@@ -14,12 +14,16 @@ CI / CD Test Automation Pipeline - Azure DevOps - Terraform - JMeter -Selenium -
 
 ## Dependencies
 
-Dependency:
 Packer https://www.packer.io/
+
 Terraform https://www.terraform.io/downloads.html
+
 JMeter https://jmeter.apache.org/download_jmeter.cgi
+
 Postman https://www.postman.com/downloads/
+
 Python https://www.python.org/downloads/
+
 Selenium https://sites.google.com/a/chromium.org/chromedriver/getting-started
 
 ## Steps
