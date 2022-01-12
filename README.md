@@ -162,7 +162,7 @@ Complete the following parameters:
  
 8.4. Add into Pipelines --> Library --> Secure files these 2 files:
 the private secure file : **id_rsa key**
-the terraform tfvars file : **terraform.tfvars**
+the terraform tfvars file : **tf.tfvars**
 
 ![img1](./images/Library-SecureFiles.png)
 
@@ -178,13 +178,7 @@ mkdir azagent;cd azagent;curl -fkSL -o vstsagent.tar.gz https://vstsagentpackage
 ```bash
 Successfully added the agent
 Testing agent connection.
-....
-   Active: active (running) since Tue 2021-03-09 03:20:16 UTC; 13ms ago
- Main PID: 2330 (runsvc.sh)
-    Tasks: 7 (limit: 4680)
-   CGroup: /system.slice/vsts.agent.javiercaparo574..ci\x2dcd\x2dtest\x2dautomation.service
-           ├─2330 /bin/bash /home/udacity/azagent/runsvc.sh
-           └─2333 ./externals/node10/bin/node ./bin/AgentService.js
+2022-01-12 23:42:10Z: Settings Saved.
 ```
 
 9. Modify the following lines on azure-pipelines.yaml before to update your own repo :
