@@ -15,7 +15,7 @@ resource "azurerm_linux_virtual_machine" "test" {
   name                  = var.name
   location              = var.location
   resource_group_name   = var.resource_group
-  size                  = "Standard_B2s"
+  size                  = "Standard_B1s"
   admin_username        = var.admin_username
   source_image_id       = var.packer_image
   disable_password_authentication = true
@@ -29,13 +29,13 @@ resource "azurerm_linux_virtual_machine" "test" {
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
   }
-#  source_image_reference {
-#    publisher = "Canonical"
-#    offer     = "UbuntuServer"
-#    sku       = "18.04-LTS"
-#    version   = "latest"
-  tags = {
-    project_name = "QA"
-    stage        = "Testing"
-  }
+  source_image_reference {
+    publisher = "Canonical"
+    offer     = "UbuntuServer"
+    sku       = "18.04-LTS"
+    version   = "latest"
+    tags = {
+      project_name = "QA"
+      stage        = "Testing"
+    }
 }
