@@ -78,7 +78,7 @@ az ad sp create-for-rbac --name="udacity" --role="Contributor"
 az group create -n RG-myPackerImage -l eastus2
 packer --version
 cd packer
-packer build ubuntu-image.json
+packer build ubuntu_image.json
 cd..
 pwd
 ```
