@@ -21,7 +21,7 @@
     "managed_image_name": "myPackerImage",
 
     "location": "East US 2",
-    "vm_size": "Standard_A2"
+    "vm_size": "Standard_DS2_v2"
   }],
   "provisioners": [{
     "inline": [
