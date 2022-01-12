@@ -1,4 +1,4 @@
-# Udacity-DevOps-Azure-Project-3 - Ensuring Quality Releases
+Ensuring Quality Releases
 
 CI / CD Test Automation Pipeline - Azure DevOps - Terraform - JMeter -Selenium - Postman
 
@@ -13,29 +13,20 @@ CI / CD Test Automation Pipeline - Azure DevOps - Terraform - JMeter -Selenium -
 ![intro](./images/intro.png)
 
 ## Dependencies
-| Dependency | Link |
-| ------ | ------ |
-| Packer | https://www.packer.io/ |
-| Terraform | https://www.terraform.io/downloads.html |
-| JMeter |  https://jmeter.apache.org/download_jmeter.cgi|
-| Postman | https://www.postman.com/downloads/ |
-| Python | https://www.python.org/downloads/ |
-| Selenium | https://sites.google.com/a/chromium.org/chromedriver/getting-started |
- 
 
-## Azure Resources
- - Azure Free account  
- - Azure Storage account (resource)
- - Azure Log Workspace (resource)
- - Terraform Service principle (resource)
- - Azure DevOps Organization ( https://azure.microsoft.com/en-us/services/devops/)
- - Azure CLI (resource)
+Dependency:
+Packer https://www.packer.io/
+Terraform https://www.terraform.io/downloads.html
+JMeter https://jmeter.apache.org/download_jmeter.cgi
+Postman https://www.postman.com/downloads/
+Python https://www.python.org/downloads/
+Selenium https://sites.google.com/a/chromium.org/chromedriver/getting-started
 
 ## Steps
 
 1. Clone this repo:
 
-```sh
+```
 git clone https://github.com/juniorcfaj/udacity-last-project
 ```
 
@@ -71,7 +62,7 @@ az account list --output table
 4. Create a  Service Principal with **Contributor** role, performing the following steps:
 
 ```bash
-az ad sp create-for-rbac --name="UdacityLastProject" --role="Contributor" 
+az ad sp create-for-rbac --name="udacity" --role="Contributor" 
 ```
 
 > Take notes of **appId**, **password**, and **tenant** as will be used at **terraform.tfvars** file 
