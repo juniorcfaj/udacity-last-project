@@ -11,7 +11,7 @@ trigger:
 name: Azure Pipelines
 variables:
   python.version: "3.7.6"
-  applicationname: 'junior-araujo-appService'
+  applicationname: 'junior-araujo-appservice'
 stages:
   - stage: ProvisionIaC
     displayName: Azure Resources Provisioning
