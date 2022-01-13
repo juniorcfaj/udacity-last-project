@@ -6,12 +6,6 @@ provider "azurerm" {
   features {}
 }
 terraform {
-  providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "2.50.0"
-    }
-  }
   backend "azurerm" {
     storage_account_name = "tstate14754"
     container_name       = "tstate"
