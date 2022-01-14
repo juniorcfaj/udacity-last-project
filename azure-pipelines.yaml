@@ -60,8 +60,8 @@ stages:
         displayName: Terraform Validate
         inputs:
           provider: 'azurerm'
-          command: 'validate'
-          workingDirectory: '$(System.DefaultWorkingDirectory)/tf'
+          command: validate
+          workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
           environmentServiceNameAzureRM: 'tstate'
       
       - task: TerraformTaskV1@0
