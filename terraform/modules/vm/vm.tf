@@ -35,8 +35,8 @@ resource "azurerm_linux_virtual_machine" "test" {
     sku       = "18.04-LTS"
     version   = "latest"
     tags = {
-      "project_name" = "QA"
-      "stage"        = "Testing"
+      project_name = "QA"
+      stage        = "Testing"
     }
   }
 }
