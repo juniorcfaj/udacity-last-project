@@ -49,6 +49,7 @@ stages:
         inputs:
           provider: 'azurerm'
           command: init
+          backendType: azurerm
           backendServiceArm: 'tstate'
           backendAzureRmResourceGroupName: 'tstate'
           backendAzureRmStorageAccountName: 'tstate14754'
