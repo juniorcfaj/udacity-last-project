@@ -36,7 +36,7 @@ stages:
           sshKeySecureFile: 'id_rsa'
       
       - bash: |
-          cp $(Agent.TempDirectory)/tf.tfvars $(System.DefaultWorkingDirectory)/tf
+          cp $(Agent.TempDirectory)/tf.tfvars $(System.DefaultWorkingDirectory)/terraform
         displayName: Copy tf.tfvars
       
       - task: TerraformInstaller@0
@@ -47,11 +47,11 @@ stages:
       - task: TerraformTaskV1@0
         displayName: Terraform Init
         inputs:
-          provider: azurerm
+          provider: 'azurerm'
           command: init
           backendServiceArm: 'tstate'
           backendAzureRmResourceGroupName: 'tstate'
-          backendAzureRmStorageAccountName: 'tstate14754'
+          backendAzureRmStorageAccountName: 'tstate22360'
           backendAzureRmContainerName: 'tstate'
           backendAzureRmKey: 'terraform.tfstate'
           workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
@@ -394,7 +394,7 @@ stages:
           command: 'init'
           backendServiceArm: 'tstate'
           backendAzureRmResourceGroupName: 'tstate'
-          backendAzureRmStorageAccountName: 'tstate14754'
+          backendAzureRmStorageAccountName: 'tstate22360'
           backendAzureRmContainerName: 'tstate'
           backendAzureRmKey: 'terraform.tfstate'
           workingDirectory: '$(System.DefaultWorkingDirectory)/tf'
