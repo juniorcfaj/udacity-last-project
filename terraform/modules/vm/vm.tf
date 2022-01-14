@@ -34,9 +34,5 @@ resource "azurerm_linux_virtual_machine" "test" {
     offer     = "UbuntuServer"
     sku       = "18.04-LTS"
     version   = "latest"
-    tags = {
-      project_name = "QA"
-      stage        = "Testing"
-    }
   }
 }
