@@ -10,8 +10,12 @@ variable "resource_group" {}
 variable "application_type" {}
 
 # Network
-variable "virtual_network_name" {}
-variable "address_prefix_test" {}
+variable "virtual_network_name" {
+  default = "udacity-network"
+}
+variable "address_prefix_test" {
+    default = "10.5.1.0/24"
+}
 variable "address_space" {}
 
 # VM
