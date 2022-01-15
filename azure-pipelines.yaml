@@ -68,7 +68,7 @@ stages:
         displayName: Terraform Plan
         inputs:
           provider: 'azurerm'
-          command: 'plan force-unlock -force bf5fc88a-385b-81e1-d036-4860d31c581d'
+          command: plan force-unlock bf5fc88a-385b-81e1-d036-4860d31c581d
           workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
           environmentServiceNameAzureRM: 'tstate'
       
