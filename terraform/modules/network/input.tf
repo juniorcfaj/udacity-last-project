@@ -16,7 +16,7 @@ variable "application_type" {
     default = "myApplication"
 }
 variable "resource_type" {
-    default = "myApplication"
+    default = "NET"
 }
 variable "address_prefix_test" {
     default = "10.5.1.0/24"

@@ -1,6 +1,6 @@
 resource "azurerm_virtual_network" "test" {
   name                 = "${var.application_type}-${var.resource_type}"
-  address_space        = var.address_space
+  address_space        = ["10.5.0.0/16"]
   location             = var.location
   resource_group_name  = var.resource_group
 }

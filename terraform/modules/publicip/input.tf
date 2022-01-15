@@ -1,6 +1,13 @@
-# Resource Group/Location
-variable "location" {}
-variable "resource_group" {}
+variable resource_group {
+    default = "RG-Project-qa"
+}
+variable location {
+    default = "eastus2"
+}
 
-variable "application_type" {}
-variable "resource_type" {}
+variable "application_type" {
+    default = "myApplication"
+}
+variable "resource_type" {
+    default = "publicip"
+}
