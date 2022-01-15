@@ -68,7 +68,7 @@ stages:
         displayName: Terraform Plan
         inputs:
           provider: 'azurerm'
-          command: plan
+          command: plan -lock=false
           workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
           environmentServiceNameAzureRM: 'tstate'
       
