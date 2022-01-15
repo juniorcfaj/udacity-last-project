@@ -136,7 +136,7 @@ Complete the following parameters:
 
 ```bash
   backend "azurerm" {
-    storage_account_name = "tstate18893"
+    storage_account_name = "tstateXXXXX"
     container_name       = "tstate"
     key                  = "terraform.tfstate"
     access_key           = "<access key>"
