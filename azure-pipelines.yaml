@@ -14,6 +14,8 @@ variables:
   applicationname: 'junior-araujo-appservice'
 stages:
   - stage: ProvisionIaC
+    timeoutInMinutes: 10 # how long to run the job before automatically cancelling
+    cancelTimeoutInMinutes: 2 # how much time to give 'run always even if cancelled tasks' before stopping them
     displayName: Azure Resources Provisioning
     jobs:
     - job: Provision_Azure_IaC

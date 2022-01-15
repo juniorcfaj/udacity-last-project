@@ -25,7 +25,7 @@ module "resource_group" {
   location       = var.location
 }
 module "network" {
-  source               = "./modules/network"
+  source               = "../modules/network"
   address_space        = var.address_space
   location             = var.location
   virtual_network_name = var.virtual_network_name
