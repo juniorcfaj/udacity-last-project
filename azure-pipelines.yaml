@@ -17,8 +17,6 @@ stages:
     displayName: Azure Resources Provisioning
     jobs:
     - job: Provision_Azure_IaC
-      timeoutInMinutes: 10 # how long to run the job before automatically cancelling
-      cancelTimeoutInMinutes: 2 # how much time to give 'run always even if cancelled tasks' before stopping them
       displayName: Provision Azure IaC
       pool:
         vmImage: 'ubuntu-18.04'
