@@ -9,6 +9,10 @@ variable "location" {
 }
 variable "name" {}
 variable "subnet_id" {}
-variable "admin_username" {}
-variable "packer_image" {}
+variable "admin_username" {
+    default = "udacity"
+}
+variable "packer_image" {
+    default = "RG-myPackerImage"
+}
 variable "public_key_path" {}
