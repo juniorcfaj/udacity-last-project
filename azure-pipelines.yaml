@@ -51,7 +51,7 @@ stages:
           command: init
           backendServiceArm: 'tstate'
           backendAzureRmResourceGroupName: 'tstate'
-          backendAzureRmStorageAccountName: 'tstate22360'
+          backendAzureRmStorageAccountName: 'tstate25489'
           backendAzureRmContainerName: 'tstate'
           backendAzureRmKey: 'terraform.tfstate'
           workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
@@ -396,7 +396,7 @@ stages:
           command: 'init'
           backendServiceArm: 'tstate'
           backendAzureRmResourceGroupName: 'tstate'
-          backendAzureRmStorageAccountName: 'tstate22360'
+          backendAzureRmStorageAccountName: 'tstate25489'
           backendAzureRmContainerName: 'tstate'
           backendAzureRmKey: 'terraform.tfstate'
           workingDirectory: '$(System.DefaultWorkingDirectory)/tf'

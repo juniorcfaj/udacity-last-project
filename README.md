@@ -178,7 +178,7 @@ mkdir azagent;cd azagent;curl -fkSL -o vstsagent.tar.gz https://vstsagentpackage
 ```bash
 Successfully added the agent
 Testing agent connection.
-2022-01-12 23:42:10Z: Settings Saved.
+2022-01-16 15:40:00Z: Settings Saved.
 ```
 
 9. Modify the following lines on azure-pipelines.yaml before to update your own repo :
