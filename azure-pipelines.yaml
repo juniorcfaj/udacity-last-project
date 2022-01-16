@@ -382,7 +382,7 @@ stages:
         displayName: Copy tf.tfvars
         inputs:
           targetType: 'inline'
-          script: cp $(Agent.TempDirectory)/tf.tfvars $(System.DefaultWorkingDirectory)/tf
+          script: cp $(Agent.TempDirectory)/tf.tfvars $(System.DefaultWorkingDirectory)/terraform
       
       - task: TerraformInstaller@0
         displayName: Install Terraform
@@ -399,7 +399,7 @@ stages:
           backendAzureRmStorageAccountName: 'tstate25489'
           backendAzureRmContainerName: 'tstate'
           backendAzureRmKey: 'terraform.tfstate'
-          workingDirectory: '$(System.DefaultWorkingDirectory)/tf'
+          workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
       
       - task: TerraformTaskV1@0
         displayName: Terraform Apply
@@ -408,5 +408,5 @@ stages:
           command: 'destroy'
           commandOptions: |
             -auto-approve
-          workingDirectory: '$(System.DefaultWorkingDirectory)/tf'
+          workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
           environmentServiceNameAzureRM: 'tstate'
