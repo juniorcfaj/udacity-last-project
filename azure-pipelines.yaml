@@ -88,7 +88,7 @@ stages:
     jobs:
       - job: Build
         pool:
-          name: Hosted Ubuntu 1604
+          name: Hosted Ubuntu 1804
         steps:
           - task: InstallSSHKey@0
             inputs:
@@ -352,7 +352,7 @@ stages:
           timeoutInMinutes: 80 # task times out in 80 minutes
           inputs:
             notifyUsers: |
-              junior_cj07@hotmail.com
+              junior.claudio18@outlook.com
             instructions: 'Please validate the end of the Pipeline to destroy the Infraestructure'
             onTimeout: 'resume'
   
