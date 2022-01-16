@@ -32,7 +32,7 @@ stages:
         displayName: Security Access
         inputs:
           knownHostsEntry: 'AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ=='
-          sshPublicKey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCvCRwQPUiNpI8oaP9/vh6Qaz1CxjZXGRmMMh+VjIDvKs7QHflsEdlDaclVi7iXHpqfLiV93ZGUq2/UM1zHepubhCARXMPprwv03aJBgwOhrRW+3ZOxow4tIf0laFV0JqBfGRgQBUIHikjq6dPa6uh54eDWNK7JtYCR+Pc850bh4Nx6XWmXY0xQeEqdS69ZxpEhai/wC2vdRJhtqsmAOo1Zv4dxFiSvqP/UPkjqeBW4llaeNdaVhMcjR1zHYpGjaUcV3O+ITt2jynKErPTtWmjSyT/ayEwDb/r+VlevRI6BGyVGScUgJoUpGyp4cG4vso8UM3+scfHlFDrcuenoPeAz claudianor@cc-1b0cdd87-6bdfcc9757-x4dtr'
+          sshPublicKey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDwKviulfKWyTW2Hg/F/TnCaMcMovWwstIfTIxpqWZMmySfVrJJSd4ve33avntCNecfev7CZu6DgCMAbIX4vrhIxc5ZwkfRBWLGeI6mfl7vHf18ig3kUDSlnTEfFQA5AVCO9OO3n8fmfjDSI0CkHLh3ozmxSjGOmfLpgBd+R/E+8w865Kjs9EXBzHmedSlYCU9XFbxYgt8rLkY/oeVOTuiW/gW6XPHx8D6Vy8FaVVsiICPhkZWIn2ZUagNhPUVlAZT+h68IWFtHTrLesqM9O7gRMSzYAAX8KVwtme0m47rvEDQR9iBC7yGwBrzOUUwqqKX8MqQhBzfSgEjtZYW0xoTr claudio@cc-d926def3-5ff977fb44-8rbwk'
           sshKeySecureFile: 'id_rsa'
       
       - bash: |

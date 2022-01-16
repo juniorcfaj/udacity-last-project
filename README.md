@@ -83,7 +83,7 @@ cd..
 pwd
 ```
 
-> Here you will get an Ubuntu 18.04 VM Image that will be used to create the VM.!!! Take note of the following values since you will need  **terraform.tfvars**
+> Here you will get an Ubuntu 18.04 VM Image that will be used to create the VM.!!! Take note of the following values since you will need  **tf.tfvars**
 
 ```bash
 ==> azure-arm:  -> Image ResourceGroupName   : 'RG-myPackerImage'
@@ -110,7 +110,7 @@ cd
 cd terraform
 ```
 
-7.1. Copy the **terraform-example.tfvars** as **terraform.tfvars** and fill the parameters marked as `to fill` as indicated with the values from steps  5, 6 and 7.
+7.1. Copy the **terraform-example.tfvars** as **tf.tfvars** and fill the parameters marked as `to fill` as indicated with the values from steps  5, 6 and 7.
 
 ```bash
 cp terraform-example.tfvars terraform.tfvars
