@@ -57,7 +57,7 @@ az account list --output table
 
 ```bash
   backend "azurerm" {
-    storage_account_name = "tstate18893"
+    storage_account_name = "tstate25489"
     container_name       = "tstate"
     key                  = "terraform.tfstate"
     access_key           = "<access key>"
