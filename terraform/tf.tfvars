@@ -17,7 +17,8 @@ address_prefix_test = "10.5.1.0/24"
 # VM
 
 packer_image = "RG-myPackerImage"
-admin_username = "udacity"
+admin_username = "junior"
+prefix = "udacity" 
 
 # public key
 # public_key_path = "/home/vsts/work/_temp/myKey.pub"
