@@ -68,7 +68,7 @@ stages:
         displayName: Terraform Plan
         inputs:
           provider: 'azurerm'
-          command: plan
+          command: plan tfplan
           commandOptions: |
             -auto-approve
           workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
