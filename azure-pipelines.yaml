@@ -42,7 +42,7 @@ stages:
       - task: TerraformInstaller@0
         displayName: Install Terraform
         inputs:
-          terraformVersion: '0.13.4'
+          terraformVersion: '0.14.8'
       
       - task: TerraformTaskV1@0
         displayName: Terraform Init
@@ -70,7 +70,7 @@ stages:
           provider: 'azurerm'
           command: plan
           commandOptions: |
-            tfplan
+            -lock=false
           workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
           environmentServiceNameAzureRM: 'tstate'
       

@@ -62,6 +62,7 @@ module "publicip" {
 module "vm" {
   source          = "./modules/vm"
   name            = "vm-test-automation"
+  resource_type   = "VM"
   location        = var.location
   subnet_id       = module.network.subnet_id_test
   resource_group  = module.resource_group.resource_group_name
