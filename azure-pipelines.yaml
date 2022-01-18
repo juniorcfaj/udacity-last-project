@@ -70,7 +70,7 @@ stages:
           provider: 'azurerm'
           command: plan
           commandOptions: |
-            tfplan -auto-approve
+            tfplan
           workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
           environmentServiceNameAzureRM: 'tstate'
       
