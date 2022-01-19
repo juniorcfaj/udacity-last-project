@@ -16,7 +16,7 @@ address_prefix_test = "10.5.1.0/24"
 
 # VM
 
-packer_image = "RG-myPackerImage"
+packer_image = "myPackerImage"
 admin_username = "junior"
 prefix = "udacity" 
 
