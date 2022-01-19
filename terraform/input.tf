@@ -42,9 +42,11 @@ variable "admin_username" {
 
 variable "packer_image" {
   description = "The ID of the image created by packer tool."
+  default = "RG-myPackerImage"
 }
 
 variable "public_key_path" {
   description = "Full path incl. filename to the public key."
+  default = "~/.ssh/id_rsa.pub"
 }
 
