@@ -21,7 +21,7 @@ admin_username = "junior"
 prefix = "udacity" 
 
 # public key
-# public_key_path = "/home/vsts/work/_temp/myKey.pub"
+# public_key_path = "/home/vsts/work/_temp/id_rsa.pub"
 
 # public key on Windows local machine
 public_key_path = "~/.ssh/id_rsa.pub"
