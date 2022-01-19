@@ -13,10 +13,14 @@ variable "tenant_id" {
 }
 
 # Resource Group/Location
-variable "location" {}
-variable "resource_group" {}
+variable "location" {
+  default = "eastus2"
+}
+variable "resource_group" {
+  default = "tstate"
+}
 variable "application_type" {
-  default = var.application_type
+  default = "myApplication"
 }
 
 # Network
