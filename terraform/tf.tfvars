@@ -5,7 +5,7 @@ client_secret = "xgvAIJg9zyyyhcAcm7RYNT.hX_~MR0m-NE"
 tenant_id = "c79c1cbe-564b-40cf-a3a7-87b916055ccf"
 
 # Resource Group/Location
-location = "eastus2"
+location = "southcentralus"
 resource_group = "tstate"
 application_type = "myApplication" # This name has to be globally unique.
 
